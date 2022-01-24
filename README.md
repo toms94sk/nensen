@@ -1,0 +1,2 @@
+# nensen
+sevotech stranka
