@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" /><input id="Reset1" type="reset" value="reset" /><input id="Checkbox1" type="checkbox" />
+    <meta lang="sk/cz" />
+    <link rel="stylesheet" href="styles/style.css" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="bjqs.css">
+    <link rel="stylesheet" href="demo.css">
+    <script type="text/javascript" src="js/javascript.js"></script>
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="js/bjqs-1.3.min.js"></script>
+    <title>Nazov obchodu - predaj pc komponentov</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="overlayBodyColor">
+            <div class="navLogo">
+                <a href="#">
+                    <p>Názov-stránky.sk<br/>
+                        <span>...všetko pre váš počítač</span></p>
+                </a>
+            </div>
+            <!--top panel navigation + search box-->
+            <nav class="userNav">
+                <div id="searchBox">
+                    <input type="search" name="googlesearch" id="inputSearch" placeholder="Nájdi v produktoch...">
+                    <a href="#"><img src="pics/find.png" alt="Najdi na stranke" id="searchImg"></a>
+                </div>
+                <ul>
+                    <li><a href="#">Prihlásiť</a></li>
+                    <li><a href="#">Registrácia</a></li>
+                    <li><a href="#">Môj účet</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#">Košík</a></li>
+                </ul>
+                <a href="#"><img id="shopBasket" src="pics/basket.png" alt="nákupný košík"></a>
+        </div>
+        </nav>
+        <!--product navigation bar-->
+        <nav class="productNav">
+            <ul>
+                <li class="productHover">
+                    <a href="#" class="linkHover"><img src="pics/products/cpu.png" alt="Procesor" class="productNavImg">Procesory</a>
+                </li>
+                <li class="productHover">
+                    <a href="graficka karta.html" class="linkHover"><img src="pics/products/graphic.png" alt="Graficka karta" class="productNavImg">Grafické karty</a>
+                </li>
+                <li class="productHover">
+                    <a href="#" class="linkHover"><img src="pics/products/motherboard.png" alt="Zakladna doska" class="productNavImg">Základné dosky</a>
+                </li>
+                <li class="productHover">
+                    <a href="#" class="linkHover"><img src="pics/products/ram.png" alt="RAM Pamete" class="productNavImg">Pamäte</a>
+                </li>
+                <li class="productHover">
+                    <a href="#" class="linkHover"><img src="pics/products/hdd.png" alt="Harddisk" class="productNavImg">Pevné disky</a>
+                </li>
+                <li class="productHover">
+                    <a href="#" class="linkHover"><img src="pics/products/supply.png" alt="Zdroje" class="productNavImg">Zdroje</a>
+                </li>
+                <li class="productHover">
+                    <a href="#" class="linkHover"><img src="pics/products/other.png" alt="Ostatné príslušenstvo" class="productNavImg">Ostatné</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- start page content  -->
+        <div class="pageContentBox">
+            <!-- start Jquery Slider -->
+            <div id="jquerySlider">
+                <div id="banner-fade">
+                    <ul class="bjqs">
+                        <li>
+                            <a href="#"><img src="pics/grafzlava.jpg"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="pics/procesorzlava.jpg"></a>
+                        </li>
+                    </ul>
+                </div>
+                <script class="secret-source">
+                    jQuery(document).ready(function($) {
+                        $('#banner-fade').bjqs({
+                            height: 320,
+                            width: 980,
+                            responsive: true
+                        });
+                    });
+                </script>
+            </div>
+            <!-- end jQuery Slider -->
+            <!-- Top Sales Content -->
+            <div class="topSaleContent">
+                <p id="topSaleFont">Najpredávanejšie</p>
+                <div class="products">
+                    <a href="#">
+                        <div class="item" id="firstItem">
+                            <div class="productBottomBox">
+                                <div class="descriptionBox">Grafická karta pre náročnejších<br/>GeForce GT635</div>
+                                <div class="priceBox">139,99 &euro;</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item" id="secondItem">
+                            <div class="productBottomBox">
+                                <div class="descriptionBox">Výkoný a tichý procesor<br/> Intel Core i7</div>
+                                <div class="priceBox">249,99 &euro;</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item" id="thirdItem">
+                            <div class="productBottomBox">
+                                <div class="descriptionBox">Pevný disk z dostatkom miesta<br/>Western Digital 4000GB </div>
+                                <div class="priceBox">135,55 &euro;</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item" id="fourthItem">
+                            <div class="productBottomBox">
+                                <div class="descriptionBox">Pamäte za rozumnú cenu<br/>Kingston 4GB DDR3</div>
+                                <div class="priceBox">249,99 &euro;</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="socialBox">
+                <span>Zdieľaj</span>
+                <a href="#"><img src="pics/fbIcon.png" alt="zdielaj na facebooku" id="fbIcon"></a>
+                <a href="#"><img src="pics/twitterIcon.png" alt="zdielaj na twittery" id="twitterIcon"></a>
+            </div>
+            <!-- end page content  -->
+        </div>
+        <!-- end wrapper  -->
+        <div class="push"> </div>
+    </div>
+    <div class="pageFooter">
+        <br/>
+        <p>Vytvoril Tomáš Hajtmaek </p>
+    </div>
+</body>
+
+</html>
